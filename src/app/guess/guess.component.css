@@ -1,0 +1,26 @@
+.wrap{
+    display: flex;
+    width: 100%;
+}
+
+.container{
+    width: 20%;
+}
+
+h3, p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 1rem;
+    text-shadow: 1px 2px 3px #808080;
+    text-align: center;
+}
+
+.imgCon{
+    margin-top: 1rem;
+    margin: .5rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

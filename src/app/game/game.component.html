@@ -1,0 +1,40 @@
+<div class="box" [ngSwitch]="currentPlayer">
+    <div *ngSwitchCase="'player1'" class="gameCon">
+        <h2 >
+            プレイヤー1は1~100の好きな数字を
+入力してOKボタンを押してください
+        </h2>
+        <div class="inputCon">
+            <input #inputNum1 id="search-box" type="number" class="input-form" value="1"  min="1" max="100"/>
+        </div>
+        <div class="btnCon">
+            <button type="button" (click)="onSubmit(inputNum1.value)">OK</button>
+        </div>
+    </div>
+    <div *ngSwitchCase="'player2'" class="gameCon">
+        <h2>
+            プレイヤー2は5回以内にプレイヤー1が決めた1~100の数字を推測してみてください
+        </h2>
+        <div *ngIf="!(twoAnswered && isCollect || count > 4)">
+            <div  class="inputCon">
+                <input #inputNum2 id="search-box" type="number" class="input-form" value="1"  min="1" max="100"/>
+            </div>
+            <div  class="btnCon">
+                <button type="button" (click)="onAnswer(inputNum2.value)">OK</button>
+            </div>
+        </div>
+        <div *ngIf="isCollect || count > 4">
+            <div class="btnCon">
+                <button type="button" (click)="goBack()">最初から</button>
+            </div>
+            <h3>試行回数: {{count}} ズレの平均: {{sumOfDifference / count}}</h3>
+        </div>
+        <h3 *ngIf="!isCollect && count > 4">残念!!</h3>
+        <div *ngIf="twoAnswered" class="messageCon">
+            <app-guess
+                [player1Num] = "player1Num"
+                [player2Num] = "player2Num"
+            ></app-guess>
+        </div>
+    </div>
+</div>

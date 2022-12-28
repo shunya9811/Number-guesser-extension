@@ -1,0 +1,83 @@
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3rem;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.inputCon{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+input {
+    padding: .3rem;
+    width: 100%;
+    max-width: 130px;
+    font-size: 20px;
+    box-sizing: content-box;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+}
+
+input:focus {
+    outline: #336699 auto 1px;
+}
+
+.btnCon{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #eee;
+    padding: .2rem 1.5rem;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  height: 515px;
+  background:rgba(187, 187, 187, 0.8);
+  border: 3px rgba(255, 255, 255, 0.4) solid;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+}
+
+.gameCon{
+    width: 100%;
+}
+
+.messageCon{
+    width: 100%;
+}

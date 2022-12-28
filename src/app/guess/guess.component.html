@@ -1,0 +1,9 @@
+<div class="wrap">
+    <div *ngFor="let guess of guesses" class="container">
+        <p>Guess {{ guess.guess }}</p>
+        <div class="imgCon">
+            <img [src]="guess.imgUrl" alt="image">
+        </div>
+        <h3 [style.color] = "guess.color">{{guess.distanceMessage}}</h3>
+    </div>
+</div>
