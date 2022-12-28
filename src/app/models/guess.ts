@@ -9,7 +9,7 @@ export class Guess{
     color: string;
   
     constructor(correctNumber : number, guess: number) {
-        this.correctNumber  = correctNumber ;
+        this.correctNumber  = correctNumber;
         this.guess = guess;
         this.differece = Math.abs(correctNumber - guess);
         this.judge();
@@ -18,7 +18,7 @@ export class Guess{
     output: {[key: string]: Output} = {
         'offBy0': {"img": "https://cdn.pixabay.com/photo/2017/08/16/22/27/thumbs-up-2649310_960_720.jpg", "message": "正解おめでとう", "color": "black"},
         'offBy1-2': {"img": "https://cdn.pixabay.com/photo/2018/01/14/23/10/bored-3082828_960_720.jpg", "message": "1~2離れてるよ", "color": "blue"},
-        'offBy3-4': {"img": "https://cdn.pixabay.com/photo/2018/01/14/23/10/bored-3082828_960_720.jpg", "message": "3~4離れてるよ", "color": "green"},
+        'offBy3-4': {"img": "https://cdn.pixabay.com/photo/2018/02/02/21/42/bored-3126445_960_720.jpg", "message": "3~4離れてるよ", "color": "green"},
         'offBy5-9': {"img": "https://cdn.pixabay.com/photo/2018/01/14/23/11/confused-3082831_960_720.jpg", "message": "5~9離れてるよ", "color": "lime"},
         'offBy10-24': {"img": "https://cdn.pixabay.com/photo/2018/02/02/21/44/excited-3126453_960_720.jpg", "message": "10~24離れてるよ", "color": "yellow"},
         'offBy25-49': {"img": "https://cdn.pixabay.com/photo/2018/01/04/21/13/young-3061646_960_720.jpg", "message": "25~49離れてるよ", "color": "orange"},
