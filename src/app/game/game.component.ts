@@ -39,6 +39,13 @@ export class GameComponent implements OnInit{
   // player2の解答
   onAnswer(input2: string): void {
     let num = Number(input2);
+
+    // 同じ数字なら棄却
+    if (num == this.player2Num){
+      return;
+    }
+
+
     if (num % 1 == 0 && num >= 1 && num <= 100){
       this.player2Num = num;
       this.isCollect = this.player1Num - num == 0;
