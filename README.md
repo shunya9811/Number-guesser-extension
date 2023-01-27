@@ -1,27 +1,20 @@
-# NumberGuesserExtension
+# Number Guesser Extension
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+コンピュータサイエンス学習プラットフォーム Recursion のAngularコースの課題として作成したプロジェクト「Number Guesser Extension」です。
 
-## Development server
+## プロジェクトの概要
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+以前作ったNumber Guesser Simpleの拡張版です。
 
-## Code scaffolding
+変更点として、プレイヤー2が推測できる回数が、5回までに制限されました。
+また推測のパフォーマンスを計測するために、ゲームオーバーメッセージには、推測の試行回数の合計と平均のズレが表示されます。
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo
 
-## Build
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/64852663/215097000-03fb4ea5-23e9-447b-ab1a-e7c380a5662f.gif)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## URL
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://shunya9811.github.io/Number-guesser-extension/
+re help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
